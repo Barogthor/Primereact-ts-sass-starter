@@ -32,9 +32,6 @@ const items = [
 ];
 
 class Topbar extends React.Component<any>{
-    constructor(props) {
-        super(props);
-    }
 
     render(){
         return <Fragment>

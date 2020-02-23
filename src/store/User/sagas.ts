@@ -14,8 +14,9 @@ export function* watchIncrementAsync() {
     yield takeLeading('INCREMENT_ASYNC', incrementAsync)
 }
 
-export function* sendRequestSignIn(payload){
-
+export function* sendRequestSignIn(action){
+    const {payload} = action
+    console.log("yeahh, saga sign in", payload);
 }
 
 export function* watchRequestSignIn(){

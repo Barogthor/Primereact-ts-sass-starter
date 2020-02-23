@@ -1,11 +1,9 @@
 import React from "react";
 import Grid from "../components/Layout/Grid";
 import Cell from "../components/Layout/Cell";
+import SignInForm from "../components/Layout/Form/SignInForm";
 
 class Home extends React.Component<any, any>{
-    constructor(props) {
-        super(props);
-    }
 
     render(){
         return <Grid>
@@ -14,6 +12,9 @@ class Home extends React.Component<any, any>{
             <Cell>3</Cell>
             <Cell>4</Cell>
             <Cell>5</Cell>
+            <Cell columnWidth={6}>
+                <SignInForm/>
+            </Cell>
         </Grid>
     }
 }

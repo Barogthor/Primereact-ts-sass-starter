@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+      "experimentalDecorators": true,
     "outDir": "./assets/javascript",
     "sourceMap": true,
     "noImplicitAny": false,

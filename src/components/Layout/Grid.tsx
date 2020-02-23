@@ -32,9 +32,6 @@ export interface GridProps {
 }
 
 class Grid extends Component<GridProps>{
-    constructor(props) {
-        super(props);
-    }
 
     render(){
         const { direction, horizontalAlignment, verticalAlignment, noGutter, style, className} = this.props;

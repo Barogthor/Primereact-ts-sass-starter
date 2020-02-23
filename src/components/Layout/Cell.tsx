@@ -24,9 +24,6 @@ export interface CellProps {
 }
 
 class Cell extends Component<CellProps>{
-    constructor(props) {
-        super(props);
-    }
 
     render(){
         const {columnWidth, tabletWidth, desktopWidth, fixedWith, verticalAlignment, tabletOffset, desktopOffset, noGutter, style, className} = this.props;
