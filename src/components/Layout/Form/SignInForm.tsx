@@ -38,8 +38,13 @@ class SignInForm extends Component<any>{
                     <label htmlFor="signin-password">Password</label>
                 </span>
             </Cell>
-            <Button onClick={() => this.props.signIn({hello:"World"})}>Submit</Button>
+            <Button onClick={() => this.props.signIn({username:"Bob",password:"123456789"})}>Submit</Button>
         </Grid>
+    }
+}
+
+const mapStateToProps = (state) => {
+    return {
     }
 }
 
@@ -47,4 +52,4 @@ const mapDispatchToProps = dispatch => ({
     signIn: payload => dispatch({type: SIGNIN_REQUEST, payload})
 })
 
-export default connect(() => {},mapDispatchToProps)(SignInForm)
+export default connect(mapStateToProps,mapDispatchToProps)(SignInForm)

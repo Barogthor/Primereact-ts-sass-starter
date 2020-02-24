@@ -17,6 +17,21 @@ export function* watchIncrementAsync() {
 export function* sendRequestSignIn(action){
     const {payload} = action
     console.log("yeahh, saga sign in", payload);
+    // try {
+        const response = yield fetch("http://localhost:8090/sign-in", {
+            method: "POST",
+            mode: "cors",
+            cache: "no-cache",
+            headers: {
+                "Content-Type": "application/json;charset=UTF-8"
+            },
+            body: payload
+        })
+    // }
+    // catch (e) {
+    //     console.error("fetch error:", e)
+    // }
+    // console.log("fetch response", response);
 }
 
 export function* watchRequestSignIn(){
